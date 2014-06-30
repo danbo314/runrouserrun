@@ -1,0 +1,56 @@
+/*-----------------------------------------------*/
+/* FSSLIDER STYLE
+/*-----------------------------------------------*/
+
+#background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#background img { display: none; }
+
+#fss-content {
+	position: relative;
+}
+
+.fss-next {
+	display: block;
+	width: 16px;
+	height: 15px;
+	float: left;
+	background: transparent url(../img/nav-next.png) no-repeat 0 0;
+}
+
+.fss-prev {
+	display: block;
+	width: 16px;
+	height: 15px;
+	float: left;
+	background: transparent url(../img/nav-prev.png) no-repeat 0 0;
+}
+
+.fss-texture {
+	position: absolute;
+}
+
+#fss-cross, #fss-cube, #fss-dot, #fss-plus, #fss-raster, #fss-square, #fss-star, #fss-strip1, #fss-strip2, #fss-strip3, #fss-strip4, #fss-zigzagh, #fss-zigzag, #fss-none {
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: repeat;
+	z-index: 10;
+}
+
+#fss-cross { background-image: url(../img/cross.png); }
+#fss-cube { background-image: url(../img/cube.png); }
+#fss-dot { background-image: url(../img/dot.png); }
+#fss-plus { background-image: url(../img/plus.png); }
+#fss-raster { background-image: url(../img/raster.png); }
+#fss-square { background-image: url(../img/square.png); }
+#fss-star { background-image: url(../img/star.png); }
+#fss-strip1 { background-image: url(../img/strip1.png); }
+#fss-strip2 { background-image: url(../img/strip2.png); }
+#fss-strip3 { background-image: url(../img/strip3.png); }
+#fss-strip4 { background-image: url(../img/strip4.png); }
+#fss-zigzagh { background-image: url(../img/zigzagh.png); }
+#fss-zigzagv { background-image: url(../img/zigzagv.png); }

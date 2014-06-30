@@ -1,0 +1,48 @@
+#CRCM {
+    font-family: Lato-Light;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.firstTitleLetter {
+    color: #E80C21;
+    font-size: 30px;
+}
+
+.endTitle {
+    color: #9d9d9d;
+    font-size: 20px;
+}
+
+.header_menu {
+    float: left;
+}
+
+.header_options {
+    float: right;
+    width: 150px;
+    text-align: center;
+    height: 70px;
+    margin: -10px 0px 0 0;
+    line-height: 70px;
+    cursor: pointer;
+    color: white;
+    text-shadow: none;
+    font-size: 16px;
+}
+
+#donate {
+    background-color: #ff0636;
+    margin-right: 30px;
+}
+
+#updates {
+    background-color: #2797f0;
+}
+
+#calendar {
+    background-color: #2867b5;
+}

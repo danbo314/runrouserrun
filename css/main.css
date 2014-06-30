@@ -1,0 +1,650 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	color: #000;
+}
+
+html {
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+body {
+	background: #eee;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+
+html {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	display: table-cell;
+	padding: 0 20px;
+	vertical-align: middle;
+}
+
+.countdown {
+	line-height: 1.2em;
+	margin: 0 auto;
+	max-width: 1100px;
+	text-align: center;
+}
+
+/* Example 1 */
+
+.example--1 .countdown {
+	background: #f7f7f7;
+	line-height: 1.4;
+	padding: 10px 0;
+}
+
+.example--1 .ce-days,
+.example--1 .ce-hours,
+.example--1 .ce-minutes,
+.example--1 .ce-seconds,
+.example--1 .ce-dseconds,
+.example--1 .ce-mseconds {
+	font-size: 1.5em;
+}
+
+.example--1 .ce-days-label,
+.example--1 .ce-hours-label,
+.example--1 .ce-minutes-label,
+.example--1 .ce-seconds-label,
+.example--1 .ce-dseconds-label,
+.example--1 .ce-mseconds-label {
+	display: block;
+	text-transform: uppercase;
+}
+
+.example--1 .ce-dseconds {
+	display: inline-block;
+	width: 150px;
+}
+
+.example--1 .ce-mseconds {
+	display: inline-block;
+	width: 150px;
+}
+
+.example--1 .col {
+	display: block;
+	padding-bottom: 20px;
+	margin: 0 20px;
+}
+
+@media all and (min-width: 540px) {
+	.example--1 .ce-days,
+	.example--1 .ce-hours,
+	.example--1 .ce-minutes,
+	.example--1 .ce-seconds,
+	.example--1 .ce-dseconds,
+	.example--1 .ce-mseconds {
+		font-size: 4.5em;
+	}
+
+	.example--1 .col {
+		display: inline-block;
+	}
+}
+
+/* Example 2 */
+
+.example--2 {
+	background: #ffc728;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+.example--2 .countdown {
+	display: inline-block;
+}
+
+.example--2 .bar {
+	clear: both;
+	background: #a66600;
+	float: left;
+	margin: 7px 5px 0 0;
+	width: 120px;
+}
+
+.example--2 .fill {
+	background: #fff;
+	height: 3px;
+	width: 0%;
+}
+
+.example--2 .text {
+	clear: both;
+	padding-top: 30px;
+	text-align: left;
+}
+
+.example--2 strong {
+	font-size: 32px;
+	font-style: italic;
+	font-weight: 600;
+	line-height: 1.1em;
+}
+
+.example--2 p {
+	font-size: 22px;
+	font-style: italic;
+	line-height: 1.2em;
+	margin: 10px 0;
+}
+
+.example--2 .ce-days,
+.example--2 .ce-hours,
+.example--2 .ce-minutes,
+.example--2 .ce-seconds {
+	font-weight: 600 !important;
+	float: left;
+	width: 30px;
+	text-align: center;
+}
+
+.example--2 .ce-days-label,
+.example--2 .ce-hours-label,
+.example--2 .ce-minutes-label,
+.example--2 .ce-seconds-label {
+	color: #a76500;
+	font-weight: 400;
+	float: left;
+}
+
+@media all and (min-width: 900px) {
+	.example--2 .countdown {
+		display: block;
+	}
+
+	.example--2 .info {
+		float: left;
+	}
+
+	.example--2 .text {
+		padding-top: 10px;
+		clear: none;
+		float: left;
+		margin: -20px 0 0 50px;
+	}
+
+	.example--2 .bar {
+		width: 250px;
+	}
+
+	.example--2 strong {
+		font-size: 40px;
+	}
+
+	.example--2 p {
+		font-size: 30px;
+	}
+}
+
+/* Example 3 */
+
+.example--3 {
+	background: #000;
+	color: #fff;
+}
+
+.example--3 .countdown {
+	background: #000;
+	color: #fff;
+	font-size: 50px;
+	font-weight: 100;
+	text-align: center;
+	min-height: 0;
+}
+	
+.example--3 .number {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	margin: 0 20%;
+	padding: 5% 0;
+}
+
+.example--3 .number + .number {
+	border-top: 1px solid #ffc728;
+}
+
+@media all and (min-width: 400px) {
+	.example--3 .countdown {
+		font-size: 60px;
+	}
+
+	.example--3 .number {
+		display: inline-block;
+		height: 110px;
+		line-height: 110px;
+		margin: 0;
+		padding: 0 5%;
+	}
+
+	.example--3 .number + .number {
+		border-top: 0;
+		border-left: 1px solid #ffc728;
+	}
+}
+
+@media all and (min-width: 690px) {
+	.example--3 .countdown {
+		font-size: 120px;
+	}
+}
+
+/* Example 4 */
+
+.example--4 {
+	background: #ec667a;
+	color: #fff;
+	min-height: 90px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-transform: lowercase;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.example--4 span {
+	font-weight: 900;
+}
+
+@media all and (min-width: 730px) {
+	.example--4 {
+		font-size: 60px;
+	}
+}
+
+/* Example 5 */
+
+.example--5 {
+	background-color: #000;
+	color: #fff;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 70px;
+}
+
+.example--5 .countdown {
+	background: url(../img/bg_example-5.jpg);
+	background-size: cover;
+}
+
+@media all and (min-width: 540px) {
+	.example--5 {
+		font-size: 140px;
+	}
+}
+
+/* Example 6 */
+
+.example--6 {
+	background: #31facd;
+	color: #00bfa0;
+	font-size: 0.8em;
+}
+
+.example--6 .col {
+	display: inline-block;
+	margin: 10% 2% 0;
+	width: 20%;
+	padding-bottom: 8%;
+}
+
+.example--6 .ce-hours,
+.example--6 .ce-minutes,
+.example--6 .ce-seconds {
+	color: #fff;
+	display: block;
+	font-size: 1.5em;
+	height: 1.8em;
+	line-height: 1.8em;
+	margin-bottom: 5px;
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-ms-perspective: 1000;
+	perspective: 1000;
+}
+
+.example--6 .ce-hours.animate .ce-flip-wrap,
+.example--6 .ce-minutes.animate .ce-flip-wrap,
+.example--6 .ce-seconds.animate .ce-flip-wrap {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.example--6 .ce-flip-wrap {
+	position: relative;
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.example--6 .ce-flip-wrap .ce-flip-front,
+.example--6 .ce-flip-wrap .ce-flip-back {
+	background: #00bfa0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	height: 1.8em;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.example--6 .ce-flip-wrap .ce-flip-front {
+	z-index: 2;
+}
+
+.example--6 .ce-flip-wrap .ce-flip-back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+@media all and (min-width: 540px) {
+	.example--6 {
+		font-size: 1.2em;
+		padding: 50px 0 45px;
+	}
+
+	.example--6 .col {
+		margin: 50px 10px 0;
+		padding-bottom: 20px;
+	}
+}
+
+/* Example 7 */
+
+.example--7 {
+	background: #292929;
+	color: #00deff;
+	font-family: 'Exo', sans-serif;
+	font-size: 40px;
+	line-height: 170px;
+	text-align: center;
+}
+
+.example--7 .countdown {
+	display: inline-block;
+	height: 1em;
+	line-height: 1em;
+	overflow: hidden;
+}
+
+.example--7 .number {
+	bottom: -1em;
+	display: inline-block;
+	padding: 0 0.1em;
+	position: relative;
+	text-align: left;
+	-moz-transition: none;
+	-webkit-transition: none;
+	transition: none;
+	width: 1.1em;
+}
+
+.example--7 .number.ce-mseconds {
+	width: 130px;
+}
+
+.example--7 .number.animate {
+	-moz-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-moz-transition: -moz-transform .3s;
+	-webkit-transition: -webkit-transform .3s;
+	transition: transform .3s;
+}
+
+.example--7 .number::before {
+	content: attr(data-old);
+	position: absolute;
+	top: -100%;
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@media all and (min-width: 600px) {
+	.example--7 {
+		font-size: 90px;
+	}
+
+	.example--7 .number {
+		width: 1.2em;
+	}
+}
+
+/* Example 8 */
+
+.example--8 {
+	background: #fde5e1;
+	color: #594b48;
+	font-family: 'Alice', serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+	
+.example--8 .ce-days {
+	font-size: 3em;
+}
+
+.example--8 strong {
+	color: #c28a81;
+	display: block;
+	font-weight: normal;
+}
+
+@media all and (min-width: 540px) {
+	.example--8 {
+		font-size: 2em;
+	}
+}
+
+/* Example 9 */
+
+.example--9 {
+	background-color: white; 
+	color: #fff;
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
+
+.example--9 .countdown {
+	max-width: none;
+	padding: 35px 25px;
+}
+
+.example--9 .circle {
+	display: inline-block;
+	position: relative;
+	margin: -10px;
+}
+
+.example--9 canvas {
+	height: 134px;
+	width: 134px;
+}
+
+.example--9 .circle__values {
+	height: 70px;
+	margin-top: -35px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+    color: black;
+}
+
+.example--9 .ce-digit,
+.example--9 .ce-label  {
+	display: block;
+	line-height: 1;
+}
+
+.example--9 .ce-digit  {
+	display: block;
+	font-size: 30px;
+}
+
+.example--9 .ce-label  {
+	color: #929292;
+	display: block;
+	font-size: 12px;
+	margin-top: 15px;
+	text-transform: uppercase;
+}
+
+@media all and (min-width: 400px) {
+	.example--9 .circle {
+		margin: -20px;
+	}
+	.example--9 canvas {
+		width: 164px;
+		height: 164px;
+	}
+	.example--9 .ce-digit  {
+		font-size: 35px;
+	}
+
+	.example--9 .ce-label  {
+		font-size: 15px;
+	}
+}
+
+@media all and (min-width: 900px) {
+	.example--9 .circle {
+		margin: -25px;
+	}
+	.example--9 canvas {
+		width: 204px;
+		height: 204px;
+	}
+	.example--9 .ce-digit  {
+		font-size: 40px;
+	}
+
+	.example--9 .ce-label  {
+		font-size: 15px;
+	}
+}

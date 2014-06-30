@@ -1,0 +1,28 @@
+body {
+	background: #f4f4f4;
+	color: #666;
+	font: normal normal normal 13px/normal Arial, Helvetica, sans-serif;
+	text-shadow: white 0px 1px 1px;
+}
+
+p {
+	line-height: 18px;
+	margin-bottom: 20px;
+}
+
+h1{ font-size:22px; }
+h2{ font-size:21px; }
+h3{ font-size:19px; }
+h4{ font-size:18px; }
+h5{ font-size:17px; }
+h6{ font-size:15px; }
+
+#content {
+	width: 500px;
+	background-color: #f4f4f4;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1001;
+	opacity: 0.80;
+	padding:20px;
+}

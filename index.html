@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+
+		<!-- Dont't forget to change the title! -->
+		<title>Colin Rouser &dot; Chicago Marathon 2015</title>
+		
+		<!-- Load Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		
+		<!-- Load stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/countdown.css">
+
+		<!-- Load all necessary JavaScript files -->
+		<script src="js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery.color-2.1.2.js"></script>
+		<script src="js/vendor/jquery.counteverest.min.js"></script>
+
+		<!-- Init Count Everest plugin -->
+        <script src="js/handlebars-v1.3.0.js"></script>
+        <script src="js/helpers.js"></script>
+		<script src="js/countdown.js"></script>
+
+	</head>
+	<body class="example--9">
+		
+		<div id='fade_container'>
+			<div class='passageCont'></div>
+
+			<!-- Nothing to change here -->
+			<div class="countdown">
+				<div class="circle">
+					<canvas id="days" width="408" height="408"></canvas>
+					<div class="circle__values">
+						<span class="ce-digit ce-days"></span>
+						<span class="ce-label ce-days-label"></span>
+					</div>
+				</div>
+				<div class="circle">
+					<canvas id="hours" width="408" height="408"></canvas>
+					<div class="circle__values">
+						<span class="ce-digit ce-hours"></span>
+						<span class="ce-label ce-hours-label"></span>
+					</div>
+				</div>
+				<div class="circle">
+					<canvas id="minutes" width="408" height="408"></canvas>
+					<div class="circle__values">
+						<span class="ce-digit ce-minutes"></span>
+						<span class="ce-label ce-minutes-label"></span>
+					</div>
+				</div>
+				<div class="circle">
+					<canvas id="seconds" width="408" height="408"></canvas>
+					<div class="circle__values">
+						<span class="ce-digit ce-seconds"></span>
+						<span class="ce-label ce-seconds-label"></span>
+					</div>
+				</div>
+			</div>
+
+			<div id='enter_full_link'><span id='cd_enter'>Enter</span> <span id='cd_colin'>Colin's</span> <span id='cd_full'>Full</span> <span id='cd_site'>Site</span></div>
+            
+            <div class="footerCont"></div>
+        </div>
+
+	</body>
+
+</html>

@@ -1,0 +1,108 @@
+@font-face {
+	font-family: MyriadPro-Light;
+	src: url('../fonts/MyriadPro-Light.otf');
+}
+
+@font-face {
+	font-family: Lato-Light;
+	src: url('../fonts/Lato-Light.otf');
+}
+
+@font-face {
+	font-family: Quicksand-Light;
+	src: url('../fonts/Quicksand-Light.otf');
+}
+
+html {
+	margin: 0px;
+	padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+    height: 100%;
+    width: 100%;
+    font-family: MyriadPro-Light !important;
+}
+
+/***** Coming Soon *****/
+
+.comingSoon {
+    background-color: #ffe545 !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+/***** Footer *****/
+
+.db_footer {
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+	text-align: center;
+    border-top: 1px solid #d6d6d6;
+    color: black;
+    cursor: default;
+    background-color: rgba(255,255,255,.95);
+    z-index: 1001;
+    position: relative;
+}
+
+/***** Header *****/
+
+.header {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(255,255,255,.95);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: Lato-Light;
+}
+
+/***** Passage ****/
+
+.passage {
+    width: 500px;
+    margin: 0 auto 0 auto;
+    font-family: Quicksand-Light;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.dark_passage {
+    color: #535353;
+}
+
+.light_passage {
+    color: #cbcbcb;
+}
+
+.phil {
+    margin-top: 10px;
+    float: right;
+    font-size: 25px;
+}
+
+.dark_phil {
+    color: #151515;
+}
+
+.light_phil {
+    color: white;
+}
+
+/***** Fade Content *****/
+
+#fade_container {
+	display: none;
+    width: 100%;
+    height: 100%;
+}
