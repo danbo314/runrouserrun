@@ -8,31 +8,8 @@ var headerPath = '../tpl/header.tpl',
         ]
     },
     passagePath = '../tpl/passage.tpl',
-    footerPath = '../tpl/footer.tpl';
-
-function bgFader(loc) {
-    var paths = [
-        'DSC05906.JPG',
-        'DSC05909.JPG',
-        'DSC05915.JPG',
-        'DSC05921.JPG',
-        'DSC05925.JPG',
-        'DSC05926.JPG',
-        'IMG_0209.JPG',
-        'IMG_0212.JPG',
-        'IMG_0566.JPG',
-        'IMG_2033.JPG',
-    ],
-    newLoc = loc % paths.length,
-    newImg = paths[newLoc],
-    url = 'url("../img/'+newImg+'")';
-
-    $('#landing_container').css({'background-image':url});
-
-    setTimeout(function() {
-        bgFader(++loc);
-    }, 4000);
-}
+    footerPath = '../tpl/footer.tpl',
+    updatesPath = '../tpl/updates.tpl';
 
 function fadeIn (callback) {
     $('#fade_container').fadeIn(2000, function() {        
@@ -54,12 +31,16 @@ function fadeIn (callback) {
     });
 }
 
-function loadTemplate (path, node, args) {
+function loadTemplate (path, node, args, cb) {
     $.ajax({
         url: path,
         success: function (data) {
             var template = Handlebars.compile(data);
+            
             node.html(template(args));
+            
+            if(cb)
+                cb();
         }
     });
 }
@@ -93,17 +74,10 @@ function loadHeaderOptions () {
     });
         
     $('#donate').click(function () {
-       window.location.href = 'donate.html'; 
+       window.location.href = 'donate.html';
     });
         
-    $('#calendar,#updates').click(function() {
-        var buttonTxt = $(this).html(),
-            that = this;
-        
-        $(this).addClass('comingSoon').html('Coming Soon!');
-        
-        setTimeout(function() {
-            $(that).removeClass('comingSoon').html(buttonTxt);
-        }, 4000);
+    $('#updates').click(function() {
+        window.location.href = 'updates.html';
     });
 }

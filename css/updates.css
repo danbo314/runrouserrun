@@ -1,0 +1,78 @@
+#uContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #404040;
+    padding-top: 100px;
+}
+
+#updatesCont {
+    margin-top: 100px;
+}
+
+#uMenu {
+    position: relative;
+    left: -5px;
+    width: 200px;
+}
+
+.uMenuItem {
+    cursor: pointer;
+    font-family: Quicksand-Light;
+    background-color: #2797f0;
+    color: white;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 2px 1px 10px #333;
+}
+
+.selectedU {
+    background-color: #ff0636;
+    width: 175px;
+}
+
+.currentU {
+    display: block;
+    width: 700px;
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #333;
+}
+
+.currentD {
+    color: grey;
+    font-family: Quicksand-Light;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.currentT {
+    text-align: center;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.currentC {
+    font-family: Lato-Light;
+}
+
+table {
+    width: 100%;
+}
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
