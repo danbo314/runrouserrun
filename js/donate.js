@@ -1,9 +1,11 @@
 $(function() {
     'use strict';
     
-    loadTemplate(headerPath, $('.header'), headerArgs);
-    loadTemplate(passagePath, $('.passageCont'), {theme: 'light'});
-    loadTemplate(footerPath, $('.footerCont'));
+    var paths = [headerPath, passagePath, footerPath],
+        nodes = [$('.header'), $('.passageCont'), $('.footerCont')],
+        argss = [headerArgs, {theme: 'light'}, null],
+        cb = null;
     
-	fadeIn();
+    loadTemplates(paths, nodes, argss, cb);
+    
 });

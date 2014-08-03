@@ -1,9 +1,12 @@
 $(function() {
     'use strict';
     
-    loadTemplate(headerPath, $('.header'), headerArgs);
-    loadTemplate(passagePath, $('.passageCont'), {theme: 'dark'});
-    loadTemplate(footerPath, $('.footerCont'));
+    var paths = [headerPath, passagePath, footerPath],
+        nodes = [$('.header'), $('.passageCont'), $('.footerCont')],
+        argss = [headerArgs, {theme: 'dark'}, null],
+        cb = callback;
+    
+    loadTemplates(paths, nodes, argss, cb);
     
     function callback() {
         $('#CRCM').unbind('click').click(function() {
@@ -22,6 +25,4 @@ $(function() {
             navigation: false
         });
     }
-    
-	fadeIn(callback);
 });

@@ -16,12 +16,13 @@ $(function() {
             isSelected: false,
             content: 'OTHER CONTENT'
         }
-    ];
+    ],
+    paths = [headerPath, passagePath, updatesPath, footerPath],
+    nodes = [$('.header'), $('.passageCont'), $('#updatesCont'), $('.footerCont')],
+    argss = [headerArgs, {theme: 'light'}, { posts: updates, item: updates[0] }, null],
+    cb = callback;
     
-    loadTemplate(headerPath, $('.header'), headerArgs);
-    loadTemplate(passagePath, $('.passageCont'), {theme: 'light'});
-    loadTemplate(updatesPath, $('#updatesCont'), { posts: updates, item: updates[0] });
-    loadTemplate(footerPath, $('.footerCont'));
+    loadTemplates(paths, nodes, argss, cb);
     
     function callback() {
         $('.uMenuItem:not(.selectedU)').hover(function () {
@@ -50,11 +51,7 @@ $(function() {
                     curr.isSelected = false;
             });
             
-            console.log(updates);
-            
             loadTemplate(updatesPath, $('#updatesCont'), { posts: updates, item: obj }, callback);
         });
     }
-    
-	fadeIn(callback);
 });
