@@ -59,6 +59,20 @@ function fadeIn (cb) {
     });
 }
 
+function loadTemplate (path, node, args, cb) {
+    $.ajax({
+        url: path,
+        success: function (data) {
+            var template = Handlebars.compile(data);
+            
+            node.html(template(args));
+            
+            if(cb)
+                cb();
+        }
+    });
+}
+
 function recLoadTemplate (paths, nodes, argss, cb, it, len) {
     $.ajax({
         url: paths[it],
