@@ -19,7 +19,7 @@ $(function() {
     ],
     paths = [headerPath, passagePath, updatesPath, footerPath],
     nodes = [$('.header'), $('.passageCont'), $('#updatesCont'), $('.footerCont')],
-    argss = [headerArgs, {theme: 'light'}, { posts: updates, item: updates[0] }, null],
+    argss = [headerArgs, {theme: 'dark'}, { posts: updates, item: updates[0] }, null],
     cb = callback;
     
     loadTemplates(paths, nodes, argss, cb);

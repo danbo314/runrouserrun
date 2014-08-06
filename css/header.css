@@ -1,3 +1,15 @@
+.header {
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    padding: 10px 30px 10px 30px;
+    background-color: rgba(255,255,255,.95);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: Lato-Light;
+}
+
 #CRCM {
     font-family: Lato-Light;
     cursor: pointer;
@@ -45,4 +57,15 @@
 
 #calendar {
     background-color: #2867b5;
+}
+
+#pc {
+    font-size: 10px;
+    margin-left: 40px;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    left: -180px;
+    top: 18px;
+    cursor: pointer;
 }

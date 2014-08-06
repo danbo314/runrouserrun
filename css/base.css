@@ -52,20 +52,6 @@ body {
     position: relative;
 }
 
-/***** Header *****/
-
-.header {
-    height: 50px;
-    width: 100%;
-    line-height: 50px;
-    padding: 10px 30px 10px 30px;
-    background-color: rgba(255,255,255,.95);
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    font-family: Lato-Light;
-}
-
 /***** Passage ****/
 
 .passage {
