@@ -3,12 +3,17 @@
         <td>
             <div id='uMenu'>
                 {{#each posts}}
-                    <div class='uMenuItem{{#if isSelected}} selectedU{{/if}}'>{{#if isLatest}}Latest{{else}}{{date}}{{/if}}</div>
+                    <div class='uMenuItem{{#if isSelected}} selectedU{{/if}}'>{{#if isLatest}}Latest{{else}}{{menuDate}}{{/if}}</div>
                 {{/each}}
             </div>
         </td>
         <td>
             <div class='currentU'>
+                <div id='uIntro'>
+                    <p>Welcome to My Updates Page!</p>
+                    <p>Here I will acknowledge and give a heartfelt thanks to all of my donors, as well as share with you my training progress and fun stories along the 26-week long journey. Make yourself at home! I will try and keep my reflections short, relevant and fun!</p>
+                </div>
+                <hr noshade>
                 <div id='topWrapper'>
                     <div class='currentD'>{{item.date}}</div>
                     <div class='currentT'>{{item.title}}</div>

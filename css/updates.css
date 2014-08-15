@@ -1,6 +1,6 @@
 #uContainer {
     width: 100%;
-    background: url('../img/IMG_0212.JPG') bottom no-repeat;
+    background: url('../img/IMG_0212.JPG') top no-repeat;
     padding-top: 100px;
 }
 
@@ -102,4 +102,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 .dbcindent {
     text-indent: 80px;
+}
+
+#uIntro {
+    padding: 20px;
 }
