@@ -106,7 +106,7 @@ function loadHeaderOptions () {
     });
         
     $('.header_options').hover(function () {
-        $(this).animate({'background-color':'#cbcbcb'});
+        $(this).animate({'background-color':'#ffe353'});
         $(this).css({'color':'#141414'});
     }, function () {
         var id = $(this).attr('id'),
@@ -118,9 +118,6 @@ function loadHeaderOptions () {
                 break;
             case 'updates':
                 color = '#2797f0';
-                break;
-            case 'calendar':
-                color = '#2867b5';
                 break;
         }
         

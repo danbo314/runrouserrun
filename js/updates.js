@@ -3,18 +3,13 @@ $(function() {
     
     var updates = [
         {
-            date: 'July 29th',
-            title: 'Test Update',
+            date: 'August 3rd, 2014',
+            title: 'Week 16: Reaching New Heights',
             isLatest: true,
             isSelected: true,
-            content: 'Lorem ipsum dolor sit amet, qui posse ocurreret voluptaria an. Eu sit dicta congue argumentum, pro an oratio saperet antiopam. Sea quod discere ceteros cu, ex viderer ornatus voluptatibus eos. Duo ex eius vituperata quaerendum. Viris labores maiorum vel ut. Vero mucius veritus ad duo. Per impetus praesent ad, mucius voluptua conceptam quo id. At mei molestiae suscipiantur, mel omittam fastidii vulputate in, ea mazim mandamus ius. At eripuit quaestio patrioque mea. Explicari interpretaris vel ad. Et hinc nonumy noluisse vel, fierent nominati scribentur sea no, his wisi oblique id. Cu eum dolores volutpat disputationi, indoctum mnesarchum interpretaris id mel, eam in probo atqui. Ipsum quaestio sea ex, vim an utinam causae intellegat, ex porro aliquam qui. Et eripuit accusata recusabo sit, option pericula instructior pri ei. Vim at possit appetere, qui commune percipitur ea. At sea alia posidonium, mel an propriae detraxit sapientem. Eu vel latine omnesque. Ut insolens euripidis nam, laudem libris convenire ut pro, pro eu nominavi tacimates maluisset. Cum eu omnes soleat deserunt. Ut quot mazim nominavi mel. Dicit adolescens ea mea, vidit expetenda pri in, soleat populo invenire eam id. Vim ex justo dicat. Ei putent perpetua partiendo per, ius at sumo omnium mnesarchum. Viderer dissentias mea ei, no per elit facilisis. Vis reque saepe repudiare an, graeco persecuti voluptatibus per ea. Qui id aeque meliore scribentur, graeci virtute ex sed. Eu nec prompta sanctus percipit, facete delectus petentium ne nam. Pri docendi liberavisse ad, mundi persecuti per ut. Ad eum meis petentium. Vim ubique saperet fuisset at, at amet brute propriae nam. Qui nihil offendit cu, vix vivendo pertinax interesset ei.'
-        },
-        {
-            date: 'July 28th',
-            title: 'Old Test Update',
-            isLatest: false,
-            isSelected: false,
-            content: 'OTHER CONTENT'
+            img: '../img/IMG_0954.jpeg',
+            imgPos: '65% 65%',
+            content: [{p:'Weeks to go: 10'}, {p:'Miles to go: 282 miles'}, {p:'Long Run: 15 miles!'}, {p:'Donor Thank You’s:', cstyle:'cbold'}, {p:'Here’s my first update (Sorry for the delay...)! First off I would like to thank the following people for donating up to this week. I really appreciate all of your support and prayers, for without you I wouldn’t be able to partake in this experience.', cstyle:'cindent'}, {p:'- Lindsey Marugg', cstyle:'cindent'}, {p:'St Barnabas Choir Members:', cstyle:'cindent citalics'}, {p:'- Mary Harkenrider', cstyle:'dbcindent'}, {p:'- Michelle Loquinte', cstyle:'dbcindent'}, {p:'- Pat Tracy', cstyle:'dbcindent'}, {p:'- Mary and John Kane', cstyle:'dbcindent'}, {p:'- Colleen Mulchrone', cstyle:'dbcindent'}, {p:'- Tom Oloffson', cstyle:'dbcindent'}, {p:'- Sister Ellen Ryan', cstyle:'dbcindent'}, {p:'Reflection:', cstyle:'cbold'}, {p:'At the beginning of this journey, there was NO possible way I could have anticipated all that it would take to train for this marathon! Week in and week out, mile after mile, ice bag after ice bag (boy have there been plenty of those!) the amount of time, energy, mental preparation and physical adjustments that have gone into the last 16 weeks have been taxing, grueling, smelly but overall very rewarding. As I stare at my watch as it tells me I have just completed my longest run thus far (which also happens to be the longest run I’ve EVER done) I can only look to the heavens and thank God for the wonderful opportunity to not only have the ability to train and stay healthy, but to do so while helping others.', cstyle:'cindent'}, {p:'So each week as I will post some of the reflections that I pondered for week while I ran and the different things I thought about along the way. This week, as I have just started reaching new heights in my mileage, I spent a lot of time focusing on why I am doing this and whom it will impact. For those who know me, you know how I feel about helping others. For those who don’t, I am a firm believer that it is our duty to extend a helping hand however we are able, whenever we are able. Regardless of how busy our lives may be or how important things are, there are always others who, for one reason or another, need help. Everyone needs love and care in this world in order to thrive and live out their lives. Some of us are blessed to have it while others are in a constant struggle to find it. If you know someone in need of help, reach out. Offer to listen or to help. The impact that we can each have on one another is truly underrated. With every small mile that I allowed to run, I know that the funds that I am helping to raise will help to make a difference in someone’s life. This motivates me everyday to get back out there and train and advocate for the less fortunate. It’s not much, but a small part that I can play in making a difference for someone else because I am able. With that, another week down, and 10 to go! Check back for more updates, photos and stories!', cstyle:'cindent'}, {p:'Peace and Blessings,'}, {p:'CSR'}]
         }
     ],
     paths = [headerPath, passagePath, updatesPath, footerPath],
@@ -52,6 +47,19 @@ $(function() {
             });
             
             loadTemplate(updatesPath, $('#updatesCont'), { posts: updates, item: obj }, callback);
+        });
+        
+        $('.fancybox').fancybox({
+            padding: 0
+        });
+        
+        $(window).scroll(function () {
+            var top = $(this).scrollTop();
+            
+            if(top > 150)
+                $('#uMenu').css({ top: top-150+'px' });
+            else
+                $('#uMenu').css({ top: 0+'px' });
         });
     }
 });

@@ -1,7 +1,6 @@
 #uContainer {
     width: 100%;
-    height: 100%;
-    background: url('../img/IMG_0212.JPG') center no-repeat;
+    background: url('../img/IMG_0212.JPG') bottom no-repeat;
     padding-top: 100px;
 }
 
@@ -39,8 +38,7 @@
     display: block;
     width: 700px;
     background-color: white;
-    padding: 20px;
-    margin-left: 20px;
+    margin: 0 0 20px 20px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #606060;
 }
@@ -59,8 +57,19 @@
     font-size: 20px;
 }
 
+.currentImg {
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+
 .currentC {
     font-family: Lato-Light;
+    padding: 20px;
+}
+
+#topWrapper {
+    padding: 20px;
 }
 
 table {
@@ -75,4 +84,22 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+}
+
+.cbold {
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 18px;
+}
+
+.citalics {
+    font-style: italic;
+}
+
+.cindent {
+    text-indent: 40px;
+}
+
+.dbcindent {
+    text-indent: 80px;
 }
