@@ -1,7 +1,7 @@
 <table>
     <tr>
         <td>
-            <div id='uMenu'>
+            <div id='uMenu' style='top:{{top}}px'>
                 {{#each posts}}
                     <div class='uMenuItem{{#if isSelected}} selectedU{{/if}}'>{{#if isLatest}}Latest{{else}}{{menuDate}}{{/if}}</div>
                 {{/each}}
@@ -21,7 +21,7 @@
                 <a class='fancybox' href='{{item.img}}'><div class='currentImg' style='background: url({{item.img}}) {{item.imgPos}} no-repeat;'></div></a>
                 <div class='currentC'>
                     {{#each item.content}}
-                        <p class='{{cstyle}}'>{{p}}</p>
+                        <p class='{{cstyle}}'>{{{p}}}</p>
                     {{/each}}
                 </div>
             </div>
