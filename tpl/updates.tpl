@@ -18,7 +18,9 @@
                     <div class='currentD'>{{item.date}}</div>
                     <div class='currentT'>{{item.title}}</div>
                 </div>
-                <a class='fancybox' href='{{item.img}}'><div class='currentImg' style='background: url({{item.img}}) {{item.imgPos}} no-repeat;'></div></a>
+                {{#if item.img}}
+                    <a class='fancybox' href='{{item.img}}'><div class='currentImg' style='background: url({{item.img}}) {{item.imgPos}} no-repeat;'></div></a>
+                {{/if}}
                 <div class='currentC'>
                     {{#each item.content}}
                         <p class='{{cstyle}}'>{{{p}}}</p>
