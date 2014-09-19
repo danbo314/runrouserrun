@@ -8,7 +8,7 @@ $(function() {
             title: 'Week 18: New City, Same Training',
             isLatest: true,
             isSelected: true,
-            img: '../img/OLAUpdate3.jpg',
+            img: '../img/OLAUpdate3.JPG',
             imgPos: '50% 60%',
             content: [{p:'Weeks to go: 8'}, {p:'Miles to go: 221'}, {p:'Long Run (This week): 17 miles'}, {p:'Reflection:', cstyle:'cbold'}, {p:'For those of you that don’t know much about me, I recently made a new career decision and decided to pack up and move to the wonderful city of Minneapolis! I am so excited for this new journey in my life and the wonderful things it holds for my development and future. While it’s been a hectic couple of weeks packing my life into a truck (literally), I have finally settled into my new home and gotten back to training. What am I thankful for this week? A vibrant running scene and culture, a new city to explore and an opportunity to get back to the miles now that my toes have healed! There’s much to do and much to see here.'}, {p:'But now, I’ll just leave you with a picture of the skyline from my apartment.'}, {p:'Peace and Blessings,'}, {p:'CSR'}]
         },
