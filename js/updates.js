@@ -3,11 +3,21 @@ $(function() {
     
     var updates = [
         {
+            date: 'September 7th, 2014',
+            menuDate: 'Sep 7',
+            title: 'Week 21: Not Alone',
+            isLatest: true,
+            isSelected: true,
+            img: '../img/Update6.JPG',
+            imgPos: '30% 60%',
+            content: [{p:'Weeks to go: 5'}, {p:'Miles to go: 120.5'}, {p:'Long Run (This week): 19 miles'}, {p:'Reflection:', cstyle:'cbold'}, {p:'Greetings friends!'}, {p:'Thanks for following my updates! Writing these has definitely made the training more exciting as it helps me to collect my thoughts after a week long of training. This week marked the second to last new distance I will have to run, and I couldn’t be happier. This journey has been highlighted with many ups and downs, good days and bad days, but now as I stare at my watch knowing all that I have done, there is nothing stopping me now. In 5 weeks I will be running a marathon. Now that I feel prepared and feel as though it is attainable, I can kick back and enjoy the remaining 5 weeks of training I have left.'}, {p:'This week during my runs, I got a chance to see more of the beautiful surrounding area of Minneapolis. It is so gorgeous here! This is truly one of the most underrated cities in America. Close to my apartment there are a string of three natural lakes that sit just at the edge of the city where I have done the majority of my long runs since I have been here. To be completely surrounded by nature but still be just a handful of miles from the city is truly wonderful. But the most unique thing about these lakes is how incredibly crowded they are weekend after weekend. Minneapolis is full of very active and dedicated runners. I have never seen such a populace of people who care about being active and who are happy about it; here it is where I truly feel at home. Everyone on the path has a different reason, a different drive to be there but we are all out there trying to achieve our various goals. It is very similar to how I feel about Team OLA. I haven’t met most of Team OLA, but knowing that they are out there working towards the same goal I am wherever they are in the country brings me inspiration and comfort. Uniting under the same cause brings people together wherever they are. I hope they are having as much fun as success as I am as we get closer and closer to the big day. Until then, good luck guys!'}, {p:'Peace and Blessings,'}, {p:'CSR'}]
+        },
+        {
             date: 'August 31st, 2014',
             menuDate: 'Aug 31',
             title: 'Week 20: Exhaustion',
-            isLatest: true,
-            isSelected: true,
+            isLatest: false,
+            isSelected: false,
             img: '../img/OLAUpdate5.jpg',
             imgPos: '60% 50%',
             content: [{p:'Weeks to go: 6'}, {p:'Miles to go: 154.5'}, {p:'Long Run (This week): 16 miles'}, {p:'Reflection:', cstyle:'cbold'}, {p:'After 20 long weeks of training I have finally come to a point that I always anticipated but could never prepare myself for: exhaustion. I am tired. For the first time, I feel like I have run over 400 miles, as though the weight of each step is very present in my legs. My feet are tender, my joints ache and I am very, very sore all of the time. Recovery and days off seem to be shorter and shorter, my ice sessions are longer and longer and yet I am still 6. Weeks. Away. How can I possibly do this? How much more of this can my body take before I call it quits?'}, {p:'It’s times like this that remind me of why I am doing this and whom I am doing this for. There are numerous people without homes in Chicago who look to the Mission on a daily basis as a source of salvation and hope. People whose feet have been tender for years, joints aching for years and who have been sore longer than I have been alive. Regardless of whatever situation in life that has brought them in need of the Mission, the fact remains that they need help. This alone motivates me to do better. This motivates me to push on. Although my pain is physical and temporary, my faith, spirituality and resolve remain unbroken. Regardless of the shape I may be in come the big day, I know I will have done everything I can in order to aid the Mission in helping those who cannot help themselves. I can only hope that the small sacrifice of my time and energy can make a big difference in someone else’s life; it’s the least I can do. In the meantime, more ice and rest it is! 6 weeks to go!'}, {p:'Peace and Blessings,'}, {p:'CSR'}]
