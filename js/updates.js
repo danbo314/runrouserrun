@@ -3,11 +3,31 @@ $(function() {
     
     var updates = [
         {
+            date: 'August 31st, 2014',
+            menuDate: 'Aug 31',
+            title: 'Week 20: Exhaustion',
+            isLatest: true,
+            isSelected: true,
+            img: '../img/OLAUpdate5.jpg',
+            imgPos: '60% 50%',
+            content: [{p:'Weeks to go: 6'}, {p:'Miles to go: 154.5'}, {p:'Long Run (This week): 16 miles'}, {p:'Reflection:', cstyle:'cbold'}, {p:'After 20 long weeks of training I have finally come to a point that I always anticipated but could never prepare myself for: exhaustion. I am tired. For the first time, I feel like I have run over 400 miles, as though the weight of each step is very present in my legs. My feet are tender, my joints ache and I am very, very sore all of the time. Recovery and days off seem to be shorter and shorter, my ice sessions are longer and longer and yet I am still 6. Weeks. Away. How can I possibly do this? How much more of this can my body take before I call it quits?'}, {p:'It’s times like this that remind me of why I am doing this and whom I am doing this for. There are numerous people without homes in Chicago who look to the Mission on a daily basis as a source of salvation and hope. People whose feet have been tender for years, joints aching for years and who have been sore longer than I have been alive. Regardless of whatever situation in life that has brought them in need of the Mission, the fact remains that they need help. This alone motivates me to do better. This motivates me to push on. Although my pain is physical and temporary, my faith, spirituality and resolve remain unbroken. Regardless of the shape I may be in come the big day, I know I will have done everything I can in order to aid the Mission in helping those who cannot help themselves. I can only hope that the small sacrifice of my time and energy can make a big difference in someone else’s life; it’s the least I can do. In the meantime, more ice and rest it is! 6 weeks to go!'}, {p:'Peace and Blessings,'}, {p:'CSR'}]
+        },
+        {
+            date: 'August 24th, 2014',
+            menuDate: 'Aug 24',
+            title: 'Week 19: Hard Work',
+            isLatest: false,
+            isSelected: false,
+            img: '../img/OLAUpdate4.JPG',
+            imgPos: '30% 70%',
+            content: [{p:'Weeks to go: 7'}, {p:'Miles to go: 187'}, {p:'Long Run (This week): 18 miles'}, {p:'Reflection:', cstyle:'cbold'}, {p:'Hello! '}, {p:'This week was great! I finally feel like I have made substantial progress in my training. For starters, the small aches and pains I have had are all but gone and my toes have happily healed (they must’ve finally gotten used to the heavy workload). That and I’m closer to the mileage I need in order to run the marathon, having peaked at 18 miles this week for my long run. Honestly, I couldn’t be happier; with 19 weeks of training, all of the hard work I have put in this far is finally starting to pay off. I am very thankful to God for helping me find focus and dedication these weeks, as well as my health. I have learned a lot about my work ethic and resolve, and the level of commitment it takes to be successful at such an endeavor.'}, {p:'Hard work is something that is essential for success. It is truly immeasurable; for no standard amount of quantifiable work can guarantee any same person the appropriate success he or she seeks. Then why is it essential for success? Because hard work introduces you to something that you may not always see very clearly, but is always present in anything you are passionate about: resolve. Resolve, to me, is basically the internal conversation I have had with my heart many times. It goes something like this: “How far are you willing to go to get what you want? How much are you willing to sacrifice? To change? Are you sure you can do this?” Sound familiar? I hear this voice in almost everything I do, whether it’s lacing up my shoes to run or leaving for work in the morning. This voice will always be present whenever you pursue something your passionate about, and I feel it is my duty to listen to it and to test my limits. See, hard work is not the list of ridiculous things you had to do to justify your position in life, but to me it is what it took to answer those questions in your heart to satisfy that resolve. So as I look out over the beautiful city of Minneapolis reflecting on my accomplishments in this journey so far, I hope to continue to answer those questions as I am presented new challenges in each opportunity afforded to me in life. And I hope you will do the same.'}, {p:'Peace and Blessings,'}, {p:'CSR'}]
+        },
+        {
             date: 'August 17th, 2014',
             menuDate: 'Aug 17',
             title: 'Week 18: New City, Same Training',
-            isLatest: true,
-            isSelected: true,
+            isLatest: false,
+            isSelected: false,
             img: '../img/OLAUpdate3.JPG',
             imgPos: '50% 60%',
             content: [{p:'Weeks to go: 8'}, {p:'Miles to go: 221'}, {p:'Long Run (This week): 17 miles'}, {p:'Reflection:', cstyle:'cbold'}, {p:'For those of you that don’t know much about me, I recently made a new career decision and decided to pack up and move to the wonderful city of Minneapolis! I am so excited for this new journey in my life and the wonderful things it holds for my development and future. While it’s been a hectic couple of weeks packing my life into a truck (literally), I have finally settled into my new home and gotten back to training. What am I thankful for this week? A vibrant running scene and culture, a new city to explore and an opportunity to get back to the miles now that my toes have healed! There’s much to do and much to see here.'}, {p:'But now, I’ll just leave you with a picture of the skyline from my apartment.'}, {p:'Peace and Blessings,'}, {p:'CSR'}]
